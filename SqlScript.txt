@@ -1,0 +1,118 @@
+create database proyectoRepository
+
+use proyectoRepository
+
+create table articulos (
+id_articulo int identity(1,1),
+nombre varchar(20) ,
+precio float,
+constraint pk_articulo primary key (id_articulo)
+)
+
+create table formasPago (
+id_formaPago int identity(1,1),
+nombre varchar(10) NOT NULL,
+constraint pk_formaPago primary key (id_formaPago)
+)
+
+create table facturas (
+nro_factura int,
+fecha date,
+id_formaPago int,
+cliente varchar(50),
+constraint pk_factura primary key (nro_factura),
+constraint fk_factura_formaPago foreign key (id_formaPago) references formasPago
+)
+
+create table detalleFactura (
+id_detalle int,
+nro_factura int,
+id_articulo int,
+cantidad int,
+constraint pk_detalle primary key (id_detalle),
+constraint fk_detalle_factura foreign key (nro_factura) references facturas,
+constraint fk_detalle_articulo foreign key (id_articulo) references articulos
+)
+
+
+CREATE PROCEDURE SP_GetFormaPago
+as
+begin
+select nombre as 'Tipo de pago'
+from formasPago
+end
+
+CREATE PROCEDURE SP_GetFacturas
+as
+begin
+select nro_factura, fecha, fp.nombre 
+from facturas f
+join formasPago fp on f.id_formaPago = fp.id_formaPago 
+end
+
+CREATE PROCEDURE SP_GetDetalleFactura
+as
+begin
+select f.nro_factura, a.nombre, cantidad
+from detalleFactura df 
+join facturas f on df.nro_factura = f.nro_factura
+join articulos a on df.id_articulo = a.id_articulo
+end
+
+
+create procedure sp_GetDetallesByFactura
+    @nro_factura int
+as
+begin
+    set nocount on;
+
+    select id_detalle, df.id_articulo, a.nombre, cantidad, a.precio
+    from detalleFactura df
+     join articulos a on df.id_articulo = a.id_articulo
+    where df.nro_factura = @nro_factura;
+end
+
+CREATE PROCEDURE SP_GetArticulos
+as
+begin
+select nombre, precio
+from articulos
+end
+
+CREATE PROCEDURE sp_GetFacturaById
+@nro_factura int
+as
+begin
+select nro_factura, fecha, fp.nombre 
+from facturas f
+join formasPago fp on f.id_formaPago = fp.id_formaPago 
+where f.nro_factura = @nro_factura
+end 
+
+CREATE PROCEDURE sp_InsertDetalleFactura
+@id_detalle int,
+@nro_factura int,
+@id_articulo int,
+@cantidad int
+as 
+begin
+insert into detalleFactura (id_detalle, nro_factura, id_articulo, cantidad)
+values (@id_detalle, @nro_factura, @id_articulo, @cantidad)
+end
+
+CREATE PROCEDURE sp_InsertFactura
+@nro_factura int,
+@fecha date,
+@id_formaPago int
+as 
+begin
+insert into facturas (nro_factura, fecha, id_formaPago)
+values (@nro_factura, @fecha, @id_formaPago)
+end
+
+create procedure sp_DeleteFactura
+@nro_factura int
+as
+begin
+delete from facturas where nro_factura = @nro_factura;
+end;

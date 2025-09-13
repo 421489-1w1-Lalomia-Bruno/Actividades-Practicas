@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D68BC2C9-937F-41C1-BE3E-ECB1F90BECC8}|WebAPIProyecto\\FacturacionAPI.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\webapiproyecto\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68BC2C9-937F-41C1-BE3E-ECB1F90BECC8}|WebAPIProyecto\\FacturacionAPI.csproj|solutionrelative:webapiproyecto\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\facturacionback\\data\\repositories\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|solutionrelative:facturacionback\\data\\repositories\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68BC2C9-937F-41C1-BE3E-ECB1F90BECC8}|WebAPIProyecto\\FacturacionAPI.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\webapiproyecto\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D68BC2C9-937F-41C1-BE3E-ECB1F90BECC8}|WebAPIProyecto\\FacturacionAPI.csproj|solutionrelative:webapiproyecto\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\facturacionback\\services\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|solutionrelative:facturacionback\\services\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\facturacionback\\domain\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|solutionrelative:facturacionback\\domain\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\facturacionback\\domain\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|solutionrelative:facturacionback\\domain\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\facturacionback\\services\\billdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|solutionrelative:facturacionback\\services\\billdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\facturacionback\\data\\repositories\\billdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D4DA6C-07C7-42D6-B1AA-92839AA314D4}|FacturacionBack\\FacturacionBack.csproj|solutionrelative:facturacionback\\data\\repositories\\billdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68BC2C9-937F-41C1-BE3E-ECB1F90BECC8}|WebAPIProyecto\\FacturacionAPI.csproj|c:\\users\\usuario\\onedrive\\escritorio\\tup c# 2\u00B0 cuatri\\webapiproyecto\\webapiproyecto\\controllers\\billdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68BC2C9-937F-41C1-BE3E-ECB1F90BECC8}|WebAPIProyecto\\FacturacionAPI.csproj|solutionrelative:webapiproyecto\\controllers\\billdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\WebAPIProyecto\\.gitignore",
+              "RelativeDocumentMoniker": "WebAPIProyecto\\.gitignore",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\WebAPIProyecto\\.gitignore",
+              "RelativeToolTip": "WebAPIProyecto\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-09-13T04:25:59.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Data\\Repositories\\BillRepository.cs",
+              "RelativeDocumentMoniker": "FacturacionBack\\Data\\Repositories\\BillRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Data\\Repositories\\BillRepository.cs",
+              "RelativeToolTip": "FacturacionBack\\Data\\Repositories\\BillRepository.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowDAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:58:40.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BillService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Services\\BillService.cs",
+              "RelativeDocumentMoniker": "FacturacionBack\\Services\\BillService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Services\\BillService.cs",
+              "RelativeToolTip": "FacturacionBack\\Services\\BillService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:58:35.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentForm.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Domain\\PaymentForm.cs",
+              "RelativeDocumentMoniker": "FacturacionBack\\Domain\\PaymentForm.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Domain\\PaymentForm.cs",
+              "RelativeToolTip": "FacturacionBack\\Domain\\PaymentForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:52:55.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Domain\\Bill.cs",
+              "RelativeDocumentMoniker": "FacturacionBack\\Domain\\Bill.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Domain\\Bill.cs",
+              "RelativeToolTip": "FacturacionBack\\Domain\\Bill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:52:53.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BillDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Services\\BillDetailService.cs",
+              "RelativeDocumentMoniker": "FacturacionBack\\Services\\BillDetailService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Services\\BillDetailService.cs",
+              "RelativeToolTip": "FacturacionBack\\Services\\BillDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:52:50.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BillDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Data\\Repositories\\BillDetailRepository.cs",
+              "RelativeDocumentMoniker": "FacturacionBack\\Data\\Repositories\\BillDetailRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\FacturacionBack\\Data\\Repositories\\BillDetailRepository.cs",
+              "RelativeToolTip": "FacturacionBack\\Data\\Repositories\\BillDetailRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:52:40.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BillDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\WebAPIProyecto\\Controllers\\BillDetailController.cs",
+              "RelativeDocumentMoniker": "WebAPIProyecto\\Controllers\\BillDetailController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\WebAPIProyecto\\Controllers\\BillDetailController.cs",
+              "RelativeToolTip": "WebAPIProyecto\\Controllers\\BillDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T23:47:03.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\WebAPIProyecto\\Controllers\\BillController.cs",
+              "RelativeDocumentMoniker": "WebAPIProyecto\\Controllers\\BillController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\tup c# 2\u00B0 cuatri\\WebAPIProyecto\\WebAPIProyecto\\Controllers\\BillController.cs*",
+              "RelativeToolTip": "WebAPIProyecto\\Controllers\\BillController.cs*",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwGMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T19:53:45.807Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

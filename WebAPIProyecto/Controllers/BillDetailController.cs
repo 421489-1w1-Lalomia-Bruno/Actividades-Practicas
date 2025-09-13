@@ -1,31 +1,30 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using FacturacionBack.Data.Interfaces;
+using FacturacionBack.Data.Repositories;
 using FacturacionBack.Domain;
 using FacturacionBack.Services;
-using System.Collections.Generic;
-using FacturacionBack.Data.Interfaces;
-using FacturacionBack.Data.Repositories;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WebAPIProyecto.Controllers
+namespace FacturacionAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BillController : ControllerBase
+    public class BillDetailController : ControllerBase
     {
-        private IBillRepository _bs;
+        private IBillDetailRepository _bds;
 
-        public BillController()
+        public BillDetailController()
         {
-            _bs = new BillRepository();
+            _bds = new BillDetailRepository();
         }
 
-        [HttpGet ("/bills")]
+        [HttpGet("/billDetail")]
         public IActionResult Get()
         {
-            List<Bill> lst = null;
+            List<BillDetail> lst = null;
             try
             {
-                lst=_bs.GetAll();
+                lst = _bds.GetAll();
                 return Ok(lst);
             }
             catch (Exception ex)
@@ -34,18 +33,18 @@ namespace WebAPIProyecto.Controllers
             }
         }
 
-        [HttpGet("/bills/{id}")]
+        [HttpGet("/billDetail/{id}")]
         public IActionResult Get(int id)
         {
-            Bill bill = _bs.GetById (id);
+            BillDetail billD = _bds.GetById(id);
             try
             {
-                if(bill == null)
+                if (billD == null)
                 {
                     return BadRequest("Id inválido");
                 }
 
-                return Ok(bill);
+                return Ok(billD);
             }
             catch (Exception ex)
             {
@@ -53,17 +52,17 @@ namespace WebAPIProyecto.Controllers
             }
         }
 
-        [HttpPost("/bills")]
+        [HttpPost("/billDetail")]
 
-        public IActionResult Post([FromBody] Bill bill)
+        public IActionResult Post([FromBody] BillDetail billD)
         {
             try
             {
-                if(bill == null)
+                if (billD == null)
                 {
                     return BadRequest("Factura vacía");
                 }
-                if(_bs.Save(bill)>0)
+                if (_bds.Save(billD))
                     return Ok("Factura registrada");
                 else
                     return StatusCode(500, "Factura vacía");
@@ -74,26 +73,27 @@ namespace WebAPIProyecto.Controllers
             }
         }
 
-        [HttpPut ("/bills/{id}")]
-        public IActionResult Put(int id, [FromBody] Bill bill)
+        [HttpPut("/billDetail/{id}")]
+        public IActionResult Put(int id, [FromBody] BillDetail billD)
         {
             try
             {
-                if (bill == null)
+                if (billD == null)
                 {
                     return BadRequest("Factura vacía");
                 }
 
-                Bill bill1 = _bs.GetById (id);
+                BillDetail billD1 = _bds.GetById(id);
 
-                bill1.Id = bill.Id;
-                bill1.IdpaymentForm = bill.IdpaymentForm;
-                bill.Date = bill.Date;
+                billD1.Id = billD.Id;
+                billD1.IdProduct = billD.IdProduct;
+                billD1.Amount = billD.Amount;
+                billD1.IdBill = billD.IdBill;
+                
+                bool result = _bds.Save(billD1);
+                bool delet = _bds.Delete(billD.Id); //no sirve para id identity
 
-                int result = _bs.Save(bill1);
-                int delet = -_bs.Delete(bill.Id); //no sirve para id identity
-
-                if (result > 0)
+                if (result)
                     return Ok("Factura registrada");
                 else
                     return StatusCode(500, "Error Interno");
@@ -104,12 +104,12 @@ namespace WebAPIProyecto.Controllers
             }
         }
 
-        [HttpDelete("/bills/{id}")]
+        [HttpDelete("/billDetail/{id}")]
         public IActionResult Delete(int id)
         {
             try
             {
-                if(_bs.Delete(id)>0)
+                if (_bds.Delete(id))
                 {
                     return Ok("Eliminado con éxito");
                 }
@@ -122,7 +122,5 @@ namespace WebAPIProyecto.Controllers
                 return StatusCode(500, "Error");
             }
         }
-
-
     }
 }

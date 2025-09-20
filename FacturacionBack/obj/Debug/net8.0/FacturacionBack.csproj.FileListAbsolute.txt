@@ -13,3 +13,5 @@ C:\Users\Usuario\OneDrive\Escritorio\tup c# 2° cuatri\WebAPIProyecto\Facturacio
 C:\Users\Usuario\OneDrive\Escritorio\tup c# 2° cuatri\WebAPIProyecto\FacturacionBack\obj\Debug\net8.0\refint\FacturacionBack.dll
 C:\Users\Usuario\OneDrive\Escritorio\tup c# 2° cuatri\WebAPIProyecto\FacturacionBack\obj\Debug\net8.0\FacturacionBack.pdb
 C:\Users\Usuario\OneDrive\Escritorio\tup c# 2° cuatri\WebAPIProyecto\FacturacionBack\obj\Debug\net8.0\ref\FacturacionBack.dll
+C:\Users\Usuario\OneDrive\Escritorio\tup c# 2° cuatri\WebAPIProyecto\FacturacionBack\bin\Debug\net8.0\FacturacionBack.runtimeconfig.json
+C:\Users\Usuario\OneDrive\Escritorio\tup c# 2° cuatri\WebAPIProyecto\FacturacionBack\obj\Debug\net8.0\FacturacionBack.genruntimeconfig.cache

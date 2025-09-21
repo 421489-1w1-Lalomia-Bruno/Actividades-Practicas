@@ -22,9 +22,12 @@ namespace FacturacionAPI.DataModels.Repositories
         {
             var facturaDelete = GetById(id);
 
-            _dbContext.facturas.Remove(facturaDelete);
+            if(facturaDelete != null)
+            {
+                _dbContext.facturas.Remove(facturaDelete);
+                _dbContext.SaveChanges();
+            }
 
-            _dbContext.SaveChanges();
         }
 
         public List<factura> GetAll()

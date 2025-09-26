@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FacturacionAPI.DataModels.Repositories;
+using FacturacionAPI.DataModels;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,64 @@ namespace FacturacionAPI.Controllers
     [ApiController]
     public class DetalleController : ControllerBase
     {
-        // GET: api/<DetalleController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private IDetalleRepository _repository;
+
+        public DetalleController(IDetalleRepository repository)
         {
-            return new string[] { "value1", "value2" };
+            _repository = repository;
         }
 
-        // GET api/<DetalleController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        // GET: api/<DetalleController>
+        [HttpGet]
+        public IActionResult Get()
         {
-            return "value";
+            try
+            {
+                return Ok(_repository.GetAll());
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+
         }
+
 
         // POST api/<DetalleController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] detallesFactura value)
         {
+            try
+            {
+                if (value == null)
+                {
+                    return BadRequest("Formato inválido");
+                }
+                else
+                {
+                    _repository.Save(value);
+                    return Ok("Creado con éxito");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
         }
 
-        // PUT api/<DetalleController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<DetalleController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            try
+            {
+                _repository.Delete(id);
+                return Ok("Eliminado con éxito");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using FacturacionAPI.DataModels.Repositories;
+﻿using FacturacionAPI.DataModels;
+using FacturacionAPI.DataModels.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -34,9 +36,39 @@ namespace FacturacionAPI.Controllers
 
         // POST api/<FacturaController>
         [HttpPost]
-        public IActionResult Post([FromBody] string value)
+        public IActionResult Post([FromBody] factura value)
         {
-            return null;
+            try
+            {
+                if (value == null)
+                {
+                    return BadRequest("Formato inválido");
+                }
+                else
+                {
+                    _repository.Save(value);
+                    return Ok("Creado con éxito");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id) 
+        {
+            try
+            {
+                _repository.Delete(id);
+                return Ok("Eliminado con éxito");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
         }
 
     }
